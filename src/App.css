@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card,
+.card2,
+.card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5em;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+}
+
+.card button {
+  background-color: rgb(66, 66, 66);
+  color: lightgray;
+}
+
+.card .df,
+.card3 .df {
+  color: #888;
+}
+
+.card2 .df {
+  color: rgb(192, 192, 192);
+}
+
+.card {
+  background-color: rgb(26, 25, 25);
+}
+
+.card2 {
+  background-color: gray;
+}
+
+.card2 button {
+  background-color: rgb(230, 227, 227);
+  color: black;
+}
+
+.card3 {
+  background-color: white;
+  color: black;
+}
+
+.img1 {
+  width: 100px;
+  margin-top: 20px;
+  filter: invert(0.8);
+}
+
+.img2 {
+  width: 100px;
+  margin-top: 20px;
+  filter: invert(0.9);
+}
+.img3 {
+  width: 100px;
+  margin-top: 20px;
+}
+@media (min-width: 500px) {
+  .contenedor {
+    flex-direction: row;
+    gap: 40px;
+    padding: 1em;
+  }
+
+  .card,
+  .card2,
+  .card3 {
+    width: 300px;
+  }
+
+  .maw {
+    width: 100%;
+  }
+}
